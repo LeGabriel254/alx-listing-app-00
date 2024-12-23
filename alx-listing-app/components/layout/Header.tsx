@@ -1,11 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
+import logo from '@/public/logo.jpg'
 
 const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md py-4 px-6 flex flex-col md:flex-row items-center justify-between">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="Logo" className="h-10 w-10" />
+        <Image src={logo} 
+        alt="Logo" 
+        className="h-10 w-10"
+        quality={100} />
         <span className="text-xl font-bold">MyAccommodation</span>
       </div>
 
@@ -30,7 +35,7 @@ const Header: React.FC = () => {
 
       {/* Accommodation Types */}
       <nav className="w-full mt-4 md:mt-0 md:w-auto">
-        <ul className="flex space-x-4 justify-center text-gray-600">
+        <ul className="flex space-x-4 justify-center text-gray-600 ml-4">
           <li className="hover:text-blue-600 cursor-pointer">Rooms</li>
           <li className="hover:text-blue-600 cursor-pointer">Mansions</li>
           <li className="hover:text-blue-600 cursor-pointer">Countryside</li>
