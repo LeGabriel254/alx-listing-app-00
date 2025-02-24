@@ -3,10 +3,17 @@ export interface Address {
   city: string;
   country: string;
 }
-export interface: ButtonProps = {
-  children: React.ReactNode;
+export interface ButtonProps  {
+ 
   onClick?: () => void;
   variant?: "default" | "primary" | "secondary" | "outline";
+  className?: string;
+};
+
+export interface CardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
   className?: string;
 };
 

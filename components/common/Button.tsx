@@ -2,7 +2,7 @@ import React from "react";
 import { Button as ShadButton } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import c
-t
+
 const Button: React.FC<ButtonProps> = ({
   children,
   onClick,

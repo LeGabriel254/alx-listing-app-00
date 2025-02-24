@@ -2,12 +2,6 @@ import React from "react";
 import { Card as ShadCard, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
-type CardProps = {
-  title: string;
-  description: string;
-  imageUrl: string;
-  className?: string;
-};
 
 const Card: React.FC<CardProps> = ({ title, description, imageUrl, className }) => {
   return (
