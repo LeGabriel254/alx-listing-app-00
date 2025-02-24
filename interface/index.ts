@@ -3,6 +3,12 @@ export interface Address {
   city: string;
   country: string;
 }
+export interface: ButtonProps = {
+  children: React.ReactNode;
+  onClick?: () => void;
+  variant?: "default" | "primary" | "secondary" | "outline";
+  className?: string;
+};
 
 export interface Offers {
   bed: string;
